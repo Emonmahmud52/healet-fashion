@@ -175,12 +175,197 @@
         </section>
 
         <!-- Upto 10% Off Section End -->
+        
+        <!-- Latest Blog Section Start -->
+        <section id="blog-section">
+            <h2 class="blog-title">LATEST FROM BLOG</h2>
+            <div class="blog-container">
+                <!-- Blog-1 Start -->
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="images/b1.jpg" alt="blog-photo">
+                        <div class="blog-date">
+                            <h3>14</h3>
+                            <h3>July</h3>
+                        </div>
+                    </div>
+                        <div class="blog-content">
+                            <h5>Molestiae ad reiciendis dignissimos</h5>
+                            <p>alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                            <button class="btn btn-black">Read More</button>
+                        </div>
+                    </div>
+                <!-- Blog-1 End -->
+                <!-- Blog-2 Start -->
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="images/b2.jpg" alt="blog-photo">
+                        <div class="blog-date">
+                            <h3>15</h3>
+                            <h3>July</h3>
+                        </div>
+                    </div>
+                        <div class="blog-content">
+                            <h5>Dolores vel maiores voluptatem enim</h5>
+                            <p>alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                            <button class="btn btn-black">Read More</button>
+                        </div>
+                    </div>
+               <!-- Blog-2 End -->
+            </div>
+        </section>
+        <!-- Latest Blog Section End -->
+
+        <!-- Testimonial section start -->
+        <section id="testimonial">
+            <h2 class="testimonial-title">TESTIMONIAL</h2>
+            <div class="carousel">
+            <div class="slides">
+                  <div class="slide">
+                    <img src="images/client.jpg" alt="">
+                    <h5>Ema Jenny</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, placeat?</p>
+                  </div>
+                  <div class="slide">
+                    <img src="images/client.jpg" alt="">
+                    <h5>Ema Jenny</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, placeat?</p>
+                  </div>
+                  <div class="slide">
+                    <img src="images/client.jpg" alt="">
+                    <h5>Ema Jenny</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, placeat?</p>
+                  </div>
+                </div>
+                <div class="slider-nav">
+                    <button class="slider-button" data-slide="0"></button>
+                    <button class="slider-button" data-slide="1"></button>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonial section End -->
+
+        <!-- Contact info -->
+        <section id="info-section">
+
+            <!-- Email and Social Contact  -->
+            <div class="contact-container">
+                <!-- Email-contact -->
+                <div class="form-content">
+                    <form>
+                        <input type="email" name="" id="" placeholder="Enter your email">
+                        <input type="submit" value="submit">
+                    </form>
+                </div>
+                <!-- Social links -->
+                <div class="social-icons">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+    
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+    
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Menus, instagram, About us and Contact Us-->
+            <div class="menu-insta-about-contact-container">
+                <!-- Menu -->
+                <div class="menus">
+                    <h2 class="menu-title">Menu</h2>
+                    <div class="menu-items">
+                            <a href="">
+                                <li>Home</li>
+                            </a>
+                            <a href="">
+                                <li>About</li>
+                            </a>
+                            <a href="">
+                                <li>Shop</li>
+                            </a>
+                            <a href="">
+                                <li>Blog</li>
+                            </a>
+                    </div>
+                </div>
+            <!-- Instagram -->
+                <div class="instagram">
+                    <h2 class="insta-title">Instagram</h2>
+                    <div class="insta-item-container">
+                        <div class="insta-img">
+                            <img src="images/p1.png" alt="">
+                        </div>
+                        <div class="insta-description">
+                            <p>long established fact <br> that a reader</p>
+                        </div>
+                    </div>
+                    <div class="insta-item-container">
+                        <div class="insta-img">
+                            <img src="images/p2.png" alt="">
+                        </div>
+                        <div class="insta-description">
+                            <p>long established fact <br> that a reader</p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- About us -->
+                <div class="about">
+                    <h2 class="about-us-title">About Us</h2>
+                    <p class="about-description">when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to</p>
+                </div>
+                <!-- Contact us -->
+                <div class="contact-us">
+                    <h2 class="contact-us-title">Contact Us</h2>
+                    <div class="contact-items">
+                            <a href="">
+                                <li><i class="fa-solid fa-location-dot"></i> Location</li>
+                            </a>
+                            <a href="">
+                                <li><i class="fa-solid fa-phone"></i> Call +01878126285</li>
+                            </a>
+                            <a href="">
+                                <li><i class="fa-solid fa-envelope"></i> emon46444@gmail.com</li>
+                            </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
        
     </main>
 <!-- Footer Start -->
     <footer>
-
+        <p>&copy;2023 All Rights Reserved By Free Html Templates</p>
     </footer>
     
+    <script src="js/all.min.js"></script>
+    <script>
+        
+        const carousel = document.querySelector('.carousel');
+    const slides = document.querySelector('.slides');
+    const slideItems = document.querySelectorAll('.slide');
+
+    let slideWidth = slideItems[0].clientWidth;
+    let currentIndex = 0;
+
+    function nextSlide() {
+    currentIndex = (currentIndex + 1) % slideItems.length;
+    updateSlidePosition();
+    }
+
+function updateSlidePosition() {
+  slides.style.transform = `translateX(${-currentIndex * slideWidth}px)`;
+}
+
+setInterval(nextSlide, 3000); // Change slide every 3 seconds (3000ms)
+
+    </script>
+   
 </body>
 </html>

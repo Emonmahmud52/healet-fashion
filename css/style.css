@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+/* Other Links */
+
+@import url('responsive.css');
+@import url('all.min.css');
+
 /* Common Shared Styles */
 .btn{
     padding: 10px 35px;
@@ -286,3 +291,265 @@ width: 98%;
     font-size: 35px;
     margin-bottom: 20px;
 }
+
+/* Latest Blog Styles */
+
+#blog-section{
+    width: 90%;
+    margin: 50px auto;
+}
+
+.blog-title{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.blog-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.blog-item{
+    width: 50%;
+    background-color: rgb(233, 230, 230);
+}
+
+.blog-img > img{
+    width: 100%;
+}
+
+.blog-img{
+    position: relative;
+}
+
+.blog-date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70px;
+    height: 70px;
+    background-color: black;
+    border: 3px solid white;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    left: 30px;
+    bottom: -8px;
+}
+.blog-content{
+    padding: 30px;
+}
+
+.blog-content>h5{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.blog-content>p{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* Testimonial Styles */
+#testimonial{
+    width: 80%;
+    margin: 50px auto;
+}
+
+.testimonial-title{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* carousel slides */
+.carousel {
+    overflow: hidden;
+    /* width: 100%;
+    max-width: 900px; 
+    margin: 0 auto; */
+    border-radius: 20px;
+    position: relative;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+    text-align: center;
+    padding: 30px;
+   
+    background-color: black;
+    color: white;
+  }
+
+  .slide>img{
+    width: 20%;
+    border-radius: 50%;
+    border: 8px solid gray;
+    margin-bottom: 20px;
+  }
+
+  .slide>h5{
+    font-size: 30px;
+    color: orange;
+    margin-bottom: 15px;
+  }
+
+  .slide>p{
+    font-size: 20px;
+  }
+  
+  .slider-nav {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+  }
+  
+  .slider-button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: orangered;
+    margin: 0 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .slider-button.active {
+    background: wheat;
+  }
+
+  /* Footer Styles Starts */
+  #info-section{
+    background-color: rgb(29, 2, 2);
+    padding: 40px;
+  }
+
+  .contact-container{
+    display: flex;
+    gap: 25px;
+  }
+
+  .form-content{
+    width: 70%;
+  }
+
+  .social-icons{
+    width: 30%;
+  }
+  
+  .social-icons> a{
+   text-decoration: none;
+   display: inline-block;
+   padding: 13px 20px;
+   border: 1px solid white;
+   margin-right: 10px;
+   color: white;
+  }
+
+  .social-icons> a:hover{
+    border: 1px solid rgb(255, 132, 0);
+    color: rgb(255, 132, 0);
+  }
+
+  input[type="email"]{
+    width: 90%;
+    padding: 10px;
+    font-size: 18px;
+    outline: 0px;
+  }
+
+  input[type="submit"]{
+    padding:12px;
+    font-size: 18px;
+    background-color: rgb(255, 132, 0);
+    border: 0;
+    color: white;
+    margin-left: -5px;
+  }
+
+  /* Menu, instagram, about us and Contact us Styles */
+
+  .menu-insta-about-contact-container{
+    margin: 50px 0px 20px 0px;
+    display: flex;
+    color: white;
+    gap: 30px;
+  }
+  .menu-title, .insta-title, .about-us-title,.contact-us-title{
+    font-size: 30px;
+  }
+  .menus{
+    width: 25%;
+  }
+  .menu-items{
+    margin-top: 40px;
+    margin-left: -75px;
+  }
+  .menu-items>a:hover,.contact-items >a:hover{
+    color: rgb(255, 132, 0);
+  }
+
+/* instagram styles */
+.instagram{
+    width: 20%;
+}
+.insta-item-container{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.insta-img{
+    background-color: white;
+    padding: 10px;
+    width: 40%;
+}
+.insta-img> img{
+   width: 100%;
+}
+
+.insta-description{
+    font-size: 20px;
+}
+
+/* About us styles */
+.about{
+    width: 20%;
+}
+
+.about-description{
+    font-size: 20px;
+}
+
+/* contact us styles */
+.contact-items>a, .menu-items>a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    margin-top: 15px;
+    font-size: 20px;
+}
+ 
+  
+/* Footer Styles */
+footer{
+    text-align: center;
+    padding: 30px 0px;
+    font-size: 20px;
+}
+
